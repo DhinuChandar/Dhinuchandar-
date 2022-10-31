@@ -1,3 +1,4 @@
+
 #include <windows.h>
 #include <iostream>
 
@@ -7,6 +8,7 @@ class employee
 {
 	int   emp_number;
 	char  emp_name[20];
+	char  emp_id[20];
 	float emp_basic;
 	float emp_da;
 	float emp_it;
@@ -23,6 +25,8 @@ void employee :: get_emp_details()
 {
 	cout<<"\nEnter employee number: ";
 	cin>>emp_number;
+	cout<<"\n Enter employee mail ID :";
+	cin>>emp_id;
 	cout<<"\nEnter employee name: ";
 	cin>>emp_name;
 	cout<<"\nEnter employee basic: ";
@@ -43,6 +47,7 @@ void employee :: show_emp_details()
 	cout<<"\n\n**** Details of  Employee ****";
 	cout<<"\nEmployee Name      :  "<<emp_name;
 	cout<<"\nEmployee number    :  "<<emp_number;
+	cout<<"\n Empoyee number    :  "<<emp_id;
 	cout<<"\nBasic salary       :  "<<emp_basic;
 	cout<<"\nEmployee DA        :  "<<emp_da;
 	cout<<"\nIncome Tax         :  "<<emp_it;
